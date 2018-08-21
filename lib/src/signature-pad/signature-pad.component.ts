@@ -198,7 +198,7 @@ export class SignaturePadComponent implements OnInit {
 
   ngAfterViewInit() {
     this._canvas = this._el.nativeElement.querySelector("canvas");
-    this._signaturePad = new SignaturePad(this._canvas);
+    this._signaturePad = new SignaturePad.default(this._canvas);
   }
 
   onClearClick() {
